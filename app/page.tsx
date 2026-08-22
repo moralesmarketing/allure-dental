@@ -78,45 +78,42 @@ export default function Home() {
 
       <main className="flex-1">
         {/* Hero */}
-        <section className="relative overflow-hidden bg-[#0b1b33] px-6 py-28 text-center text-white">
-          <div className="absolute inset-0 opacity-25">
-            <Image
-              src="/images/hero-office.jpg"
-              alt=""
-              fill
-              className="object-cover"
-              priority
-            />
-          </div>
-          <div className="absolute inset-0 bg-gradient-to-b from-[#0b1b33]/80 via-[#0b1b33]/90 to-[#0b1b33]" />
-          <div className="relative mx-auto max-w-2xl">
-            <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-sky-300">
-              Chino Hills, CA
-            </p>
-            <h1 className="font-serif text-4xl font-medium leading-tight sm:text-6xl">
-              Exceptional Dental Care in Chino Hills
-            </h1>
-            <p className="mt-4 font-serif text-xl italic text-sky-100">
-              Where Comfort Meets Affordability
-            </p>
-            <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-slate-300">
-              Allure Dental applies advanced techniques for general and
-              cosmetic dentistry — led by Dr. Nikki Vo, known for gentle,
-              thorough, and affordable care for the whole family.
-            </p>
-            <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
-              <a
-                href="tel:+19093937707"
-                className="rounded-full bg-sky-500 px-6 py-3 text-sm font-semibold text-[#0b1b33] transition-colors hover:bg-sky-400"
-              >
-                Call to Book
-              </a>
-              <a
-                href="#location"
-                className="rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
-              >
-                Get Directions
-              </a>
+        <section className="relative flex min-h-[640px] items-end overflow-hidden text-white sm:items-center">
+          <Image
+            src="/images/dentist-patient.jpg"
+            alt="Dentist consulting with a smiling patient"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0b1b33]/95 via-[#0b1b33]/70 to-[#0b1b33]/10" />
+          <div className="relative mx-auto w-full max-w-6xl px-6 py-16 sm:py-24">
+            <div className="max-w-lg">
+              <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-sky-300">
+                Gentle Care. Advanced Techniques. Affordable Prices.
+              </p>
+              <h1 className="font-serif text-4xl font-medium leading-tight sm:text-6xl">
+                Exceptional Dental Care in Chino Hills
+              </h1>
+              <p className="mt-6 max-w-md text-base leading-relaxed text-slate-200">
+                Allure Dental applies advanced techniques for general and
+                cosmetic dentistry — led by Dr. Nikki Vo, known for gentle,
+                thorough, and affordable care for the whole family.
+              </p>
+              <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+                <a
+                  href="tel:+19093937707"
+                  className="rounded-full bg-sky-500 px-6 py-3 text-center text-sm font-semibold text-[#0b1b33] transition-colors hover:bg-sky-400"
+                >
+                  Call to Book
+                </a>
+                <a
+                  href="#location"
+                  className="rounded-full border border-white/30 px-6 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-white/10"
+                >
+                  Get Directions
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -144,8 +141,8 @@ export default function Home() {
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
             <Image
-              src="/images/dentist-patient.jpg"
-              alt="Dentist consulting with a patient in a modern dental office"
+              src="/images/hero-office.jpg"
+              alt="Modern dental office"
               fill
               className="object-cover"
             />
