@@ -258,7 +258,7 @@ export default function Home() {
           id="location"
           className="border-t border-slate-100 bg-slate-50 px-6 py-24"
         >
-          <div className="mx-auto grid max-w-4xl gap-12 sm:grid-cols-2">
+          <div className="mx-auto grid max-w-4xl gap-12 sm:grid-cols-[1fr_1fr] sm:gap-20">
             <div>
               <h2 className="font-serif text-2xl font-medium tracking-tight">
                 Hours
@@ -288,7 +288,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div>
+            <div className="sm:pl-8">
               <h2 className="font-serif text-2xl font-medium tracking-tight">
                 Location
               </h2>
