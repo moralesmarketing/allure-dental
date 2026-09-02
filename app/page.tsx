@@ -207,6 +207,36 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Payment & Insurance */}
+        <section className="bg-[#0b1b33] px-6 py-24">
+          <div className="mx-auto grid max-w-5xl overflow-hidden rounded-3xl bg-[#0f2140] sm:grid-cols-2">
+            <div className="p-10 sm:p-12">
+              <h2 className="font-serif text-3xl font-medium tracking-tight text-white">
+                Payment &amp; Insurance
+              </h2>
+              <p className="mt-5 leading-relaxed text-slate-300">
+                We want quality dental care to be accessible. Accepted
+                insurance and payment options can vary, so our team is happy
+                to confirm what works for your visit before you come in.
+              </p>
+              <a
+                href="tel:+19093937707"
+                className="mt-8 inline-block rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
+              >
+                Call to Confirm Coverage
+              </a>
+            </div>
+            <div className="relative min-h-[280px] sm:min-h-full">
+              <Image
+                src="/images/payment-reception.jpg"
+                alt="Friendly front desk staff ready to help patients"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+        </section>
+
         {/* Hours & Location */}
         <section
           id="location"
