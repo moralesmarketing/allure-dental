@@ -131,7 +131,7 @@ export default function Home() {
         </section>
 
         {/* Reviews */}
-        <section id="reviews" className="bg-[#0b1b33] px-6 py-24">
+        <section id="reviews" className="bg-white px-6 py-24">
           <div className="mx-auto grid max-w-5xl overflow-hidden rounded-3xl bg-[#0f2140] sm:grid-cols-2">
             <div className="p-10 sm:p-12">
               <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-sky-300">
