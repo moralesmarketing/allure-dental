@@ -23,7 +23,7 @@ const items: Item[] = [
   {
     title: "Affordable pricing",
     detail: "High-quality dental care at accessible prices.",
-    image: "/images/service-cosmetic.jpg",
+    image: "/images/apart-pricing.jpg",
   },
   {
     title: "Convenient location",
