@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ServicesCarousel from "./components/ServicesCarousel";
+import WhatSetsApartCarousel from "./components/WhatSetsApartCarousel";
 
 const hours = [
   { day: "Tuesday", time: "9:00 am – 6:30 pm" },
@@ -9,25 +10,6 @@ const hours = [
   { day: "Saturday", time: "9:00 am – 2:00 pm" },
   { day: "Sunday", time: "Closed" },
   { day: "Monday", time: "Closed" },
-];
-
-const differentiators = [
-  {
-    title: "Gentle, patient-first care",
-    detail: "Dr. Vo takes the time to explain every treatment clearly.",
-  },
-  {
-    title: "Advanced techniques",
-    detail: "Modern methods applied to restorative and cosmetic treatments.",
-  },
-  {
-    title: "Affordable pricing",
-    detail: "High-quality dental care at accessible prices.",
-  },
-  {
-    title: "Convenient location",
-    detail: "Easy to reach on Pipeline Ave in the heart of Chino Hills.",
-  },
 ];
 
 export default function Home() {
@@ -191,30 +173,16 @@ export default function Home() {
         </section>
 
         {/* What Sets Us Apart */}
-        <section className="px-6 py-24">
-          <div className="mx-auto max-w-4xl">
-            <div className="mx-auto max-w-2xl text-center">
-              <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-sky-700">
-                Why Allure Dental
-              </p>
-              <h2 className="font-serif text-3xl font-medium tracking-tight">
-                What Sets Us Apart
-              </h2>
-            </div>
-            <div className="mt-14 grid gap-8 sm:grid-cols-2">
-              {differentiators.map((item) => (
-                <div key={item.title} className="flex gap-4">
-                  <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-sky-600" />
-                  <div>
-                    <h3 className="font-medium text-slate-900">{item.title}</h3>
-                    <p className="mt-1 text-sm leading-relaxed text-slate-600">
-                      {item.detail}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
+        <section className="bg-[#0b1b33] px-6 py-24">
+          <div className="mx-auto max-w-2xl text-center">
+            <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-sky-300">
+              Why Allure Dental
+            </p>
+            <h2 className="font-serif text-3xl font-medium tracking-tight text-white">
+              What Sets Us Apart
+            </h2>
           </div>
+          <WhatSetsApartCarousel />
         </section>
 
         {/* Hours & Location */}
