@@ -149,34 +149,44 @@ export default function Home() {
         </section>
 
         {/* Reviews */}
-        <section id="reviews" className="bg-[#0b1b33] px-6 py-24 text-white">
-          <div className="mx-auto max-w-2xl text-center">
-            <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-sky-300">
-              Reviews
-            </p>
-            <h2 className="font-serif text-3xl font-medium tracking-tight">
-              Why Patients Choose Allure Dental
-            </h2>
+        <section id="reviews" className="bg-[#0b1b33] px-6 py-24">
+          <div className="mx-auto grid max-w-5xl overflow-hidden rounded-3xl bg-[#0f2140] sm:grid-cols-2">
+            <div className="p-10 sm:p-12">
+              <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-sky-300">
+                Reviews
+              </p>
+              <h2 className="font-serif text-3xl font-medium tracking-tight text-white">
+                Why Patients Choose Allure Dental
+              </h2>
 
-            <a
-              href="https://www.google.com/search?q=Allure+Dental+Chino+Hills+reviews"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-2 text-sm font-medium text-sky-100 transition-colors hover:bg-white/10"
-            >
-              ★★★★☆ &nbsp;4.3 on Google — see reviews
-            </a>
+              <a
+                href="https://www.google.com/search?q=Allure+Dental+Chino+Hills+reviews"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-2 text-sm font-medium text-sky-100 transition-colors hover:bg-white/10"
+              >
+                ★★★★☆ &nbsp;4.3 on Google — see reviews
+              </a>
 
-            <p className="mt-8 font-serif text-xl italic leading-relaxed text-sky-100">
-              &ldquo;Patients frequently point to the friendly staff, short
-              wait times, and Dr. Vo&apos;s thorough explanations of
-              treatment.&rdquo;
-            </p>
-            <p className="mt-6 text-sm leading-relaxed text-slate-400">
-              Reviews are mixed across directories, as with most practices —
-              we recommend reading a few for yourself and calling ahead to
-              confirm current details like insurance and availability.
-            </p>
+              <p className="mt-8 font-serif text-xl italic leading-relaxed text-sky-100">
+                &ldquo;Patients frequently point to the friendly staff, short
+                wait times, and Dr. Vo&apos;s thorough explanations of
+                treatment.&rdquo;
+              </p>
+              <p className="mt-6 text-sm leading-relaxed text-slate-400">
+                Reviews are mixed across directories, as with most practices
+                — we recommend reading a few for yourself and calling ahead
+                to confirm current details like insurance and availability.
+              </p>
+            </div>
+            <div className="relative min-h-[280px] sm:min-h-full">
+              <Image
+                src="/images/reviews-smile.jpg"
+                alt="Smiling patient"
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
         </section>
 
@@ -203,36 +213,6 @@ export default function Home() {
                   </div>
                 </div>
               ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Payment & Insurance */}
-        <section className="bg-[#0b1b33] px-6 py-24">
-          <div className="mx-auto grid max-w-5xl overflow-hidden rounded-3xl bg-[#0f2140] sm:grid-cols-2">
-            <div className="p-10 sm:p-12">
-              <h2 className="font-serif text-3xl font-medium tracking-tight text-white">
-                Payment &amp; Insurance
-              </h2>
-              <p className="mt-5 leading-relaxed text-slate-300">
-                We want quality dental care to be accessible. Accepted
-                insurance and payment options can vary, so our team is happy
-                to confirm what works for your visit before you come in.
-              </p>
-              <a
-                href="tel:+19093937707"
-                className="mt-8 inline-block rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
-              >
-                Call to Confirm Coverage
-              </a>
-            </div>
-            <div className="relative min-h-[280px] sm:min-h-full">
-              <Image
-                src="/images/payment-reception.jpg"
-                alt="Friendly front desk staff ready to help patients"
-                fill
-                className="object-cover"
-              />
             </div>
           </div>
         </section>
