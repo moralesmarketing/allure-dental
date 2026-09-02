@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ServicesCarousel from "./components/ServicesCarousel";
 
 const hours = [
   { day: "Tuesday", time: "9:00 am – 6:30 pm" },
@@ -8,29 +9,6 @@ const hours = [
   { day: "Saturday", time: "9:00 am – 2:00 pm" },
   { day: "Sunday", time: "Closed" },
   { day: "Monday", time: "Closed" },
-];
-
-const services = [
-  {
-    name: "General Dentistry",
-    description:
-      "Routine checkups and cleanings to keep your smile healthy year-round.",
-  },
-  {
-    name: "Restorative Care",
-    description:
-      "Treatment for tooth decay, including fillings and restorations using modern techniques.",
-  },
-  {
-    name: "Gum Disease Treatment",
-    description:
-      "Diagnosis and treatment for gum disease at every stage, from mild to advanced.",
-  },
-  {
-    name: "Cosmetic Dentistry & Whitening",
-    description:
-      "Teeth whitening and smile-focused treatments to help you feel confident.",
-  },
 ];
 
 const differentiators = [
@@ -150,47 +128,23 @@ export default function Home() {
         </section>
 
         {/* Services */}
-        <section id="services" className="border-y border-slate-100 bg-slate-50 px-6 py-24">
-          <div className="mx-auto max-w-5xl">
-            <div className="mx-auto max-w-2xl text-center">
-              <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-sky-700">
-                Services
-              </p>
-              <h2 className="font-serif text-3xl font-medium tracking-tight">
-                Committed to High-Quality, Affordable Care
-              </h2>
-              <p className="mt-4 leading-relaxed text-slate-600">
-                Allure Dental applies advanced dental techniques to improve
-                our patients&apos; smiles, with expertise across the
-                following services.
-              </p>
-            </div>
+        <section id="services" className="bg-[#0b1b33] py-24 text-white">
+          <div className="mx-auto max-w-2xl px-6 text-center">
+            <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-sky-300">
+              Services
+            </p>
+            <h2 className="font-serif text-3xl font-medium tracking-tight">
+              Committed to High-Quality, Affordable Care
+            </h2>
+            <p className="mt-4 leading-relaxed text-slate-300">
+              Allure Dental applies advanced dental techniques to improve
+              our patients&apos; smiles, with expertise across the
+              following services.
+            </p>
+          </div>
 
-            <div className="mt-14 grid gap-10 sm:grid-cols-2">
-              <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
-                <Image
-                  src="/images/dental-chair.jpg"
-                  alt="Modern dental treatment room"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="grid gap-5">
-                {services.map((service) => (
-                  <div
-                    key={service.name}
-                    className="rounded-xl border border-slate-200 bg-white p-5"
-                  >
-                    <h3 className="font-serif text-lg font-medium text-sky-800">
-                      {service.name}
-                    </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-slate-600">
-                      {service.description}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
+          <div className="mt-16">
+            <ServicesCarousel />
           </div>
         </section>
 
